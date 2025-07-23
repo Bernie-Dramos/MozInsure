@@ -12,7 +12,7 @@ const policiesData = {
     category: "Saúde",
     description:
       "Cobertura médica completa para toda a família com acesso aos melhores hospitais e clínicas de Moçambique",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/placeholder.svg?height=400&width=600&text=Seguro+de+Saúde",
     price: "A partir de 2.500 MT/mês",
     coverage: [
       "Consultas médicas ilimitadas",
@@ -41,7 +41,7 @@ const policiesData = {
     category: "Automóvel",
     description:
       "Proteção total para seu veículo contra acidentes, roubos, furtos e danos a terceiros, com assistência 24 horas",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/placeholder.svg?height=400&width=600&text=Seguro+Automóvel",
     price: "A partir de 1.800 MT/mês",
     coverage: [
       "Danos próprios por colisão",
@@ -60,7 +60,175 @@ const policiesData = {
     ],
     benefits: ["Oficinas credenciadas", "Peças originais garantidas", "Guincho gratuito", "Assistência em viagem"],
   },
-  // Add more policies as needed
+  3: {
+    name: "Seguro Residencial Premium",
+    category: "Residência",
+    description:
+      "Proteja seu lar e patrimônio contra incêndios, roubos, desastres naturais e danos estruturais com cobertura completa",
+    image: "/placeholder.svg?height=400&width=600&text=Seguro+Residencial",
+    price: "A partir de 1.200 MT/mês",
+    coverage: [
+      "Incêndio e explosão",
+      "Roubo e furto qualificado",
+      "Danos elétricos",
+      "Vendaval e granizo",
+      "Responsabilidade civil familiar",
+      "Despesas de hospedagem",
+    ],
+    eligibility: [
+      "Propriedade em Moçambique",
+      "Vistoria prévia da residência",
+      "Comprovante de propriedade",
+      "Sistema de segurança básico",
+      "Idade da construção até 30 anos",
+    ],
+    benefits: ["Assistência 24 horas", "Reparos de emergência", "Chaveiro e vidraceiro", "Limpeza pós-sinistro"],
+  },
+  4: {
+    name: "Seguro de Vida Individual",
+    category: "Vida",
+    description:
+      "Garanta a segurança financeira da sua família em caso de imprevistos, com cobertura por morte e invalidez",
+    image: "/placeholder.svg?height=400&width=600&text=Seguro+de+Vida",
+    price: "A partir de 800 MT/mês",
+    coverage: [
+      "Morte natural ou acidental",
+      "Invalidez permanente total",
+      "Invalidez permanente parcial",
+      "Despesas médicas hospitalares",
+      "Auxílio funeral",
+      "Renda mensal ao cônjuge",
+    ],
+    eligibility: [
+      "Idade entre 18-65 anos",
+      "Declaração de saúde",
+      "Exame médico se necessário",
+      "Residência em Moçambique",
+      "Renda comprovada",
+    ],
+    benefits: [
+      "Pagamento imediato aos beneficiários",
+      "Sem carência para acidentes",
+      "Cobertura mundial",
+      "Assistência funeral incluída",
+    ],
+  },
+  5: {
+    name: "Seguro Empresarial",
+    category: "Empresarial",
+    description:
+      "Proteção completa para seu negócio, funcionários e patrimônio empresarial contra diversos riscos operacionais",
+    image: "/placeholder.svg?height=400&width=600&text=Seguro+Empresarial",
+    price: "A partir de 5.000 MT/mês",
+    coverage: [
+      "Incêndio e danos ao patrimônio",
+      "Responsabilidade civil geral",
+      "Equipamentos e maquinário",
+      "Perda de faturamento",
+      "Acidentes de trabalho",
+      "Roubo de valores",
+    ],
+    eligibility: [
+      "Empresa registada em Moçambique",
+      "Licenças comerciais válidas",
+      "Vistoria das instalações",
+      "Relatório financeiro",
+      "Medidas de segurança adequadas",
+    ],
+    benefits: [
+      "Consultoria em gestão de riscos",
+      "Assistência jurídica",
+      "Reposição de documentos",
+      "Suporte 24/7 para emergências",
+    ],
+  },
+  6: {
+    name: "Seguro de Viagem",
+    category: "Viagem",
+    description:
+      "Viaje com tranquilidade dentro e fora de Moçambique com cobertura médica, bagagem e assistência completa",
+    image: "/placeholder.svg?height=400&width=600&text=Seguro+de+Viagem",
+    price: "A partir de 300 MT/viagem",
+    coverage: [
+      "Despesas médicas no exterior",
+      "Repatriação sanitária",
+      "Bagagem extraviada ou danificada",
+      "Cancelamento de viagem",
+      "Atraso de voo",
+      "Assistência jurídica no exterior",
+    ],
+    eligibility: [
+      "Qualquer idade",
+      "Viagem com duração até 180 dias",
+      "Destino nacional ou internacional",
+      "Declaração de saúde básica",
+      "Comprovante de viagem",
+    ],
+    benefits: [
+      "Cobertura mundial",
+      "Central de atendimento 24h",
+      "App móvel para emergências",
+      "Rede médica credenciada global",
+    ],
+  },
+  7: {
+    name: "Seguro Agrícola",
+    category: "Agrícola",
+    description:
+      "Proteja suas culturas e atividade agrícola contra intempéries, pragas e outros riscos que podem afetar a produção",
+    image: "/placeholder.svg?height=400&width=600&text=Seguro+Agrícola",
+    price: "A partir de 2.000 MT/safra",
+    coverage: [
+      "Perda por seca ou excesso de chuva",
+      "Granizo e vendaval",
+      "Pragas e doenças",
+      "Incêndio nas culturas",
+      "Geada (regiões aplicáveis)",
+      "Perda de produtividade",
+    ],
+    eligibility: [
+      "Produtor rural registado",
+      "Propriedade em Moçambique",
+      "Histórico de produção",
+      "Técnicas agrícolas adequadas",
+      "Vistoria prévia da propriedade",
+    ],
+    benefits: [
+      "Assistência técnica agrícola",
+      "Monitoramento climático",
+      "Pagamento rápido de sinistros",
+      "Consultoria em sustentabilidade",
+    ],
+  },
+  8: {
+    name: "Seguro Motocicleta",
+    category: "Automóvel",
+    description:
+      "Cobertura específica e acessível para motocicletas e ciclomotores, adaptada às necessidades do transporte urbano",
+    image: "/placeholder.svg?height=400&width=600&text=Seguro+Motocicleta",
+    price: "A partir de 600 MT/mês",
+    coverage: [
+      "Danos próprios por colisão",
+      "Roubo e furto da motocicleta",
+      "Responsabilidade civil obrigatória",
+      "Acidentes pessoais do condutor",
+      "Assistência 24 horas",
+      "Acessórios e equipamentos",
+    ],
+    eligibility: [
+      "Carta de condução categoria A",
+      "Motocicleta com até 15 anos",
+      "Vistoria prévia obrigatória",
+      "Residência em Moçambique",
+      "Curso de condução defensiva (recomendado)",
+    ],
+    benefits: [
+      "Oficinas especializadas",
+      "Guincho para motocicletas",
+      "Capacete de segurança gratuito",
+      "Desconto para condutores experientes",
+    ],
+  },
 }
 
 const relatedPolicies = [
@@ -68,19 +236,19 @@ const relatedPolicies = [
     id: 3,
     name: "Seguro Residencial",
     description: "Proteja seu lar contra incêndios e roubos",
-    image: "/placeholder.svg?height=150&width=200",
+    image: "/placeholder.svg?height=150&width=200&text=Casa",
   },
   {
     id: 4,
     name: "Seguro de Vida",
     description: "Garanta o futuro da sua família",
-    image: "/placeholder.svg?height=150&width=200",
+    image: "/placeholder.svg?height=150&width=200&text=Família",
   },
   {
     id: 5,
     name: "Seguro Empresarial",
     description: "Proteção completa para seu negócio",
-    image: "/placeholder.svg?height=150&width=200",
+    image: "/placeholder.svg?height=150&width=200&text=Empresa",
   },
 ]
 

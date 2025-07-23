@@ -22,6 +22,36 @@ const policiesData = {
     price: "A partir de 1.800 MT/mês",
     coverage: "Proteção total contra acidentes, roubos e danos",
   },
+  3: {
+    name: "Seguro Residencial Premium",
+    price: "A partir de 1.200 MT/mês",
+    coverage: "Proteja seu lar contra incêndios, roubos e desastres naturais",
+  },
+  4: {
+    name: "Seguro de Vida Individual",
+    price: "A partir de 800 MT/mês",
+    coverage: "Garanta o futuro financeiro da sua família",
+  },
+  5: {
+    name: "Seguro Empresarial",
+    price: "A partir de 5.000 MT/mês",
+    coverage: "Proteção completa para seu negócio e funcionários",
+  },
+  6: {
+    name: "Seguro de Viagem",
+    price: "A partir de 300 MT/viagem",
+    coverage: "Viaje com tranquilidade dentro e fora de Moçambique",
+  },
+  7: {
+    name: "Seguro Agrícola",
+    price: "A partir de 2.000 MT/safra",
+    coverage: "Proteja suas culturas contra intempéries e pragas",
+  },
+  8: {
+    name: "Seguro Motocicleta",
+    price: "A partir de 600 MT/mês",
+    coverage: "Cobertura específica para motocicletas e ciclomotores",
+  },
 }
 
 export default function ApplyPage({ params }: { params: { id: string } }) {
