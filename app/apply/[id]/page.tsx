@@ -65,7 +65,8 @@ export default function ApplyPage({ params }: { params: { id: string } }) {
   })
   const [isSubmitted, setIsSubmitted] = useState(false)
 
-  const policy = policiesData[Number(params.id) as keyof typeof policiesData]
+  const policyId = Number(params.id);
+  const policy = Number.isFinite(policyId) ? policiesData[policyId as keyof typeof policiesData] : undefined;
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prev) => ({ ...prev, [field]: value }))
