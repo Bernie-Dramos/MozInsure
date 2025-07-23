@@ -1,8 +1,10 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import Link from "next/link"
-import Image from "next/image"
-import { Shield, Users, Award } from "lucide-react"
+
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import Link from "next/link";
+import Image from "next/image";
+import { Shield, Users, Award } from "lucide-react";
 
 const featuredPolicies = [
   {
@@ -120,8 +122,8 @@ export default function HomePage() {
               >
                 <CardHeader className="p-0">
                   <div className="relative overflow-hidden rounded-t-lg">
-                    <Image
-                      src={policy.image || "/placeholder.svg"}
+                      <Image
+                        src={policy.image}
                       alt={policy.name}
                       width={300}
                       height={200}
@@ -158,7 +160,7 @@ export default function HomePage() {
             {benefits.map((benefit, index) => (
               <div key={index} className="text-center group">
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-yellow-100 rounded-full mb-6 group-hover:bg-yellow-200 transition-colors">
-                  <benefit.icon className="w-8 h-8 text-yellow-600" />
+                    {React.createElement(benefit.icon, { className: "w-8 h-8 text-yellow-600" })}
                 </div>
                 <h3 className="text-xl font-semibold text-blue-900 mb-4">{benefit.title}</h3>
                 <p className="text-gray-600">{benefit.description}</p>
@@ -186,10 +188,6 @@ export default function HomePage() {
                           .join("")}
                       </span>
                     </div>
-                    <div>
-                      <p className="font-semibold text-blue-900">{testimonial.name}</p>
-                      <p className="text-sm text-gray-600">{testimonial.location}</p>
-                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -197,39 +195,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-red-600 to-yellow-600 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-black/10"></div>
-        <div className="absolute inset-0 opacity-20">
-          <div className="h-full w-full bg-[url('data:image/svg+xml,%3Csvg width=40 height=40 viewBox=0 0 40 40 xmlns=http://www.w3.org/2000/svg%3E%3Cg fill=%23ffffff fillOpacity=0.1%3E%3Cpath d=M20 20c0-11.046-8.954-20-20-20v20h20z/%3E%3C/g%3E%3C/svg%3E')]"></div>
-        </div>
-        <div className="container mx-auto px-4 text-center relative z-10">
-          <h2 className="text-4xl font-bold mb-6">Pronto para se Proteger?</h2>
-          <p className="text-xl mb-8 text-white/90">
-            Entre em contato conosco hoje mesmo e descubra como podemos ajudar a proteger o que mais importa para você.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact">
-              <Button
-                size="lg"
-                className="bg-white text-red-600 hover:bg-gray-100 px-8 py-4 font-semibold rounded-full"
-              >
-                Entre em Contato
-              </Button>
-            </Link>
-            <Link href="/policies">
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-red-600 px-8 py-4 font-semibold rounded-full bg-transparent"
-              >
-                Ver Todas as Apólices
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
     </div>
-  )
+  );
 }
