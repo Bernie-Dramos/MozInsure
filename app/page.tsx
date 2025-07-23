@@ -1,9 +1,9 @@
 
-import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
 import Image from "next/image";
+import { createElement } from "react";
 import { Shield, Users, Award } from "lucide-react";
 
 const featuredPolicies = [
@@ -160,7 +160,7 @@ export default function HomePage() {
             {benefits.map((benefit, index) => (
               <div key={index} className="text-center group">
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-yellow-100 rounded-full mb-6 group-hover:bg-yellow-200 transition-colors">
-                    {React.createElement(benefit.icon, { className: "w-8 h-8 text-yellow-600" })}
+                    {createElement(benefit.icon, { className: "w-8 h-8 text-yellow-600" })}
                 </div>
                 <h3 className="text-xl font-semibold text-blue-900 mb-4">{benefit.title}</h3>
                 <p className="text-gray-600">{benefit.description}</p>
